@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- esta página es responsive y tiene uso de bootstrap -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Contáctanos</title>
+</head>
+
+<body>
+    <header class="text-center p-3 bg-light">
+        <h1>Envios gratis por compras superiores a 250.000</h1>
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../img/logo ejemplo.png" alt="Logo" class="img-fluid" style="max-width: 200px;">
+            </a>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse justify-content-center">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="../index.html" class="nav-link">HOME</a></li>
+                    <li class="nav-item"><a href="productos.html" class="nav-link">PRODUCTOS</a></li>
+                    <li class="nav-item"><a href="ubicacion.html" class="nav-link">UBICACIÓN</a></li>
+                    <li class="nav-item"><a href="politica.html" class="nav-link">POLÍTICA</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mt-4">
+        <h1>HOME > CONTÁCTANOS</h1>
+        <h2 class="text-center">¡Nos encanta leerte!</h2>
+
+        <form class="mt-4">
+            <fieldset class="border p-4">
+                <legend class="w-auto">Déjanos tu mensaje</legend>
+
+                <div class="mb-3">
+                    <label for="name" class="form-label">Nombre</label>
+                    <input type="text" id="name" class="form-control">
+                </div>
+
+                <div class="mb-3">
+                    <label for="email" class="form-label">Correo electrónico</label>
+                    <input type="email" id="email" class="form-control">
+                </div>
+
+                <div class="mb-3">
+                    <label for="text" class="form-label">Déjanos tu mensaje</label>
+                    <textarea id="text" rows="5" class="form-control"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Enviar</button>
+                <button type="reset" class="btn btn-secondary">Reestablecer</button>
+            </fieldset>
+        </form>
+    </main>
+
+    <footer class="mt-5 bg-light text-center p-3">
+        <div class="container">
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="productos.html">PRODUCTOS</a></li>
+                <li class="list-inline-item"><a href="ubicacion.html">UBICACIÓN</a></li>
+                <li class="list-inline-item"><a href="contactanos.html">CONTÁCTANOS</a></li>
+                <li class="list-inline-item"><a href="politica.html">POLÍTICA DE CAMBIOS Y DEVOLUCIONES</a></li>
+            </ul>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
