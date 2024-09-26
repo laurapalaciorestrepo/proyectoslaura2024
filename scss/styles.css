@@ -5,33 +5,6 @@
   box-sizing: border-box;
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  background-color: beige;
-}
-
-.logo {
-  flex: 1;
-}
-
-nav {
-  flex: 2;
-}
-
-.menu ul {
-  display: flex;
-  justify-content: flex-end;
-  gap: 15px;
-}
-
-.logo img {
-  max-width: 150px;
-  height: auto;
-}
-
 h1 {
   background-color: beige;
   font-size: 20px;
