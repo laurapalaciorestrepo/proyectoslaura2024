@@ -2,7 +2,10 @@
 
 @import "base/reset";
 @import "base/home";
-@import "base/mq-desktop";
-@import "base/mq-mobile";
-@import "base/mq-tablet";
+@import "utilidades/mixin";
+@import "utilidades/variables";
+@import "layout/mq-desktop";
+@import "layout/mq-mobile";
+@import "layout/mq-tablet";
+@import "layout/ubicacion"
 
