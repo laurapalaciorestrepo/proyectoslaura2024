@@ -1,0 +1,24 @@
+
+  @media (max-width: 768px) {
+    .logo img {
+      max-width: 200px;
+      margin: 10px auto;
+    }
+  
+    .relative {
+      flex-wrap: wrap;
+      div {
+        flex: 1 1 calc(50% - 20px);
+      }
+    }
+  
+    .menu ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .nav-link {
+      margin: 0 5px;
+    }
+  }
+  
