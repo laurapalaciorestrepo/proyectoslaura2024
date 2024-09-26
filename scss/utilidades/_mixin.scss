@@ -1,3 +1,25 @@
+// Mixin para estilos del nav
+@mixin nav-style($bg-color: #f5f5f5, $text-color: #333, $padding: 10px) {
+  background-color: $bg-color;
+  color: $text-color;
+  padding: $padding;
+  
+  ul {
+      @include flexbox(space-between, center, nowrap); 
+      list-style-type: none; 
+      margin: 0;
+      padding: 0;
+      
+      li {
+          margin: 0 10px; 
+      }
+
+      a {
+          @include button-style($bg-color: transparent, $text-color: $text-color, $hover-bg-color: #ddd);
+      }
+  }
+}
+
 //tipografia
 @mixin typography($font-size, $text-align, $font-family) {
     font-size: $font-size;
