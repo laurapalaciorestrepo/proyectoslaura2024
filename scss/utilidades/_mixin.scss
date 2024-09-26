@@ -1,0 +1,70 @@
+//tipografia
+@mixin typography($font-size, $text-align, $font-family) {
+    font-size: $font-size;
+    text-align: $text-align;
+    font-family: $font-family;
+  }
+
+//margen y padding
+@mixin spacing($margin, $padding) {
+    margin: $margin;
+    padding: $padding;
+  }
+
+//botones y enlaces
+@mixin button-style($bg-color, $text-color, $hover-bg-color, $padding: 10px 20px) {
+    background-color: $bg-color;
+    color: $text-color;
+    padding: $padding;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  
+    &:hover {
+      background-color: $hover-bg-color;
+    }
+  }
+
+//flexbox 
+
+@mixin flexbox($justify-content: center, $align-items: center, $flex-wrap: wrap) {
+    display: flex;
+    justify-content: $justify-content;
+    align-items: $align-items;
+    flex-wrap: $flex-wrap;
+  }
+
+//imagenes responsive
+
+@mixin responsive-image($max-width: 100%, $height: auto) {
+    max-width: $max-width;
+    height: $height;
+  }
+
+//media queries
+
+@mixin responsive($breakpoint) {
+    @media (max-width: $breakpoint) {
+      @content;
+    }
+  }
+
+//bordes 
+
+@mixin border-radius($radius) {
+    border-radius: $radius;
+  }
+
+
+//texto centrado
+@mixin centered-text {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+
+//transiciones
+
+@mixin transition($property, $duration) {
+    transition: $property $duration;
+  }
+  

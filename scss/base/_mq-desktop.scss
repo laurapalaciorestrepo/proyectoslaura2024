@@ -1,0 +1,23 @@
+@media (min-width: 1024px) {
+    h1 {
+      font-size: 24px;
+      padding: 15px;
+    }
+  
+    .relative div {
+      flex: 1 1 calc(25% - 20px);
+    }
+  
+    .menu ul {
+      gap: 30px;
+    }
+  
+    .menu ul li a {
+      padding: 15px 30px;
+    }
+  
+    footer .menu ul {
+      gap: 30px;
+    }
+  }
+  

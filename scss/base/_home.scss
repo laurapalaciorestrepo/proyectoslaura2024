@@ -1,0 +1,166 @@
+//import de variables
+@import "../utilidades/variables";
+
+//import de mixin
+@import "../utilidades/mixin";
+
+h1 {
+    background-color: $heading-background-color;
+    font-size: 20px;
+    padding: $heading-padding;
+    text-align: center;
+    font-family: $primary-font;
+    color: white;
+
+    &:first-of-type {
+        background-color: black;
+    }
+}
+
+body {
+    font-family: $primary-font;
+    margin: 0;
+    padding: 0;
+}
+
+.logo img {
+    width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+iframe {
+    display: block;
+    margin: 20px auto;
+}
+
+.banner {
+    padding: $banner-padding;
+    width: $banner-width;
+    height: auto;
+}
+
+.nav-link {
+    color: $primary-color;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0 10px;
+
+    &:hover {
+        color: $secondary-color;
+    }
+}
+
+.textos {
+    text-align: center;
+    margin: 20px 0;
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+nav .menu ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+
+    li {
+        margin: 0;
+
+        a {
+            text-decoration: none;
+            color: $primary-color;
+            padding: 10px 20px;
+            background-color: $background-color;
+            border-radius: $border-radius;
+            transition: background-color $transition-duration ease;
+
+            &:hover {
+                background-color: $hover-background-color;
+            }
+        }
+    }
+}
+
+.bloque, .bloque2 {
+    text-align: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.relative {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+
+    div {
+        flex: 1;
+        text-align: center;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        border: 1px solid $border-color;
+        border-radius: 10px;
+    }
+}
+
+// Footer
+footer {
+    background-color: $background-color;
+    padding: 20px 0;
+
+    .menu ul {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+
+        li {
+            list-style: none;
+
+            a {
+                text-decoration: none;
+                color: $primary-color;
+            }
+        }
+    }
+}
+
+// Media Queries
+@media (max-width: 768px) {
+    .relative div {
+        flex: 1 1 calc(50% - 20px);
+    }
+
+    .menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 18px;
+    }
+
+    .relative div {
+        flex: 1 1 100%;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        gap: 10px;
+
+        li a {
+            padding: 8px 15px;
+        }
+    }
+}
