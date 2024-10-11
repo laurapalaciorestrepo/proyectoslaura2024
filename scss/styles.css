@@ -153,19 +153,18 @@ nav .menu ul li a:hover {
   font-size: 20px;
 }
 
-form {
-  fieldset {
-    border-radius: 10px; // 
-    border: 1px solid #ddd; 
-    padding: 20px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); 
-  }
-
-  legend {
-    font-size: 20px;
-    padding: 0 0px; 
-  }
+form fieldset {
+  border-radius: 10px; 
+  border: 1px solid #ddd; 
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); 
 }
+
+form legend {
+  font-size: 20px;
+  padding: 0 0px; 
+}
+
 
 
 footer {
@@ -412,4 +411,6 @@ footer .menu ul li a {
   .menu ul li a {
     padding: 8px 15px;
   }
-}/*# sourceMappingURL=styles.css.map */
+}
+
+/*# sourceMappingURL=styles.css.map */
