@@ -17,6 +17,27 @@ h1 {
     }
 }
 
+.text-box, .map-box {
+    background-color: #fed925; 
+    border: 1px solid #fed925; 
+    border-radius: 10px; 
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); 
+    margin-bottom: 20px;
+}
+
+.text-box {
+
+    padding: 20px;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.map-box {
+    overflow: hidden;
+    iframe {
+        border-radius: inherit; 
+    }
+}
 
 body {
     font-family: $primary-font;
